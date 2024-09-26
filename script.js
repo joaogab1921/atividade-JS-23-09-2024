@@ -27,4 +27,25 @@ while (n<= 9){
 
     n++
 }
+
+3-
+let n, n2=0
+
+do{
+    n=Number(prompt("insira um numero positivo para ser somado ,insira 0 para fechar"))
+    n2=n2+n
+    console.log(n2)
+}while(n!=0)
+
+
+4-
+let n = Number(prompt("Fale o numero: "))
+let t=1, i=1
+
+while(i<n){
+    t=t*(n-i)
+    i++
+    console.log(t)
+}
 */
+
