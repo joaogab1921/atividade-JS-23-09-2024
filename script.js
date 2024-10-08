@@ -47,5 +47,43 @@ while(i<n){
     i++
     console.log(t)
 }
-*/
 
+5-
+let idade;
+let altura;
+let peso;
+let somaIdades = 0;
+let quantidade = 0;
+let alturaMaisJovem = 0; 
+let pesoMaisVelho = 0;   
+let idadeMaisJovem = 0;  
+let idadeMaisVelho = 0;   
+let continuar = "sim"; 
+
+while (continuar === "sim") {
+    idade = Number(prompt("Digite a idade da pessoa:"));
+    altura = Number(prompt("Digite a altura da pessoa (em metros):"));
+    peso = Number(prompt("Digite o peso da pessoa (em kg):"));
+
+    if (idade < idadeMaisJovem || idadeMaisJovem === 0) {
+        alturaMaisJovem = altura;
+        idadeMaisJovem = idade; 
+    }
+    
+    if (idade > idadeMaisVelho) {
+        pesoMaisVelho = peso;
+        idadeMaisVelho = idade;
+    }
+
+    somaIdades += idade;
+    quantidade++;
+
+    continuar = prompt("Deseja inserir dados de outra pessoa? (sim/não)");
+}
+
+let mediaIdades = somaIdades / quantidade;
+
+console.log(`Altura da pessoa mais jovem: ${alturaMaisJovem} m`);
+console.log(`Peso da pessoa mais velha: ${pesoMaisVelho} kg`);
+console.log(`Média das idades: ${mediaIdades}`);
+*/
